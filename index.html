@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>David-Andero Lellep - Portfolio</title>
+    <meta name="title" content="David-Andero Lellep - Portfolio" />
+    <meta name="description" content="This is a personal portfolio" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
+  </head>
+
+  <body>
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preloader" data-preloader>
+      <div class="circle"></div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo" id="toggleText" onclick="toggleName()"
+          >Portfolio</a
+        >
+
+        <button
+          class="nav-toggle-btn"
+          data-nav-toggler
+          data-nav-toggle-btn
+          aria-label="Toggle menu"
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Minust</a>
+            </li>
+
+            <li>
+              <a href="kogemus" class="navbar-link">Kogemus</a>
+            </li>
+
+            <li>
+              <a href="form" class="navbar-link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+        <section class="section skills" aria-label="our skills">
+          <div class="container">
+            <p class="section-subtitle">Tarkvaraarendaja</p>
+
+            <h1 class="h2 section-title">David-Andero Lellep</h1>
+
+            <div class="skills-wrapper">
+              <div>
+                <p class="section-text">
+                  Olen tarkvaraarenduse eriala lõpetaja, kellel on varasem
+                  praktikakogemus kahest IT-ettevõttest. Hindan töökeskkonda,
+                  kus rõhk on innovatsioonil ja koostööl.
+                </p>
+
+                <p class="section-text">
+                  Olen hea suhtlemisoskuse ning analüütilise mõtlemisvõimega
+                  ning olen huvitatud rollidest IT või tehnikavaldkonnas, mis
+                  võimaldavad mul rakendada oma tehnilisi teadmisi laiemalt kui
+                  ainult arendustöös.
+                </p>
+
+                <a href="CV_David_Andero_Lellep.pdf" class="btn has-after" target="_blank">
+                  <span class="span">Tutvu minu CV-iga</span>
+                  <ion-icon
+                    name="download-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
+              </div>
+
+              <div>
+                <ul class="skills-list">
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">
+                        Andmebaasid - MySQL ja PostgreSQL
+                      </p>
+
+                      <data class="progress-value" value="100"></data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 100%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">
+                        Programmeerimiskeeled - Python ja JavaScript (React,
+                        Nuxt.js)
+                      </p>
+                      <data class="progress-value" value="100"></data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 100%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Pilveplatvormid - Supabase</p>
+
+                      <data class="progress-value" value="100"> </data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 100%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Sisuhaldus - WordPress</p>
+
+                      <data class="progress-value" value="100"></data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 100%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - KOGEMUS
+      -->
+
+        <section class="section skills" aria-label="our skills">
+          <div class="container">
+            <p class="section-subtitle">Praktika</p>
+
+            <h2 id="kogemus"class="h2 section-title">Kogemus</h2>
+
+            <div class="skills-wrapper">
+              <div>
+                <p class="section-text">
+                  <strong>REGISTER OÜ</strong> - 12.06.2023 - 28.07.2023<br />
+                  Sain töötada nii meeskonnas kui ka individuaalselt. Omandasin
+                  hea arusaamise WordPressi lehtede struktuurist ning sain ka
+                  praktilise kogemuse pluginate arendamisest.
+                </p>
+                <div class="progress-bg">
+                  <div class="progress" style="width: 100%"></div>
+                </div>
+                <p class="section-text">
+                  <strong>PANORAM OÜ</strong> - 20.11.2023 - 14.04.2024 <br />
+                  Töötasin peamiselt iseseisvalt, mis andis mulle võimaluse
+                  läheneda probleemide lahendamisele algusest lõpuni
+                  loominguliselt ning arendas väga süsteemset mõtlemist.
+                </p>
+              </div>
+
+              <div>
+                <table class="skills-table">
+                  <thead>
+                    <tr>
+                      <th>Ettevõte</th>
+                      <th>Ülesannete kirjeldus</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Register OÜ</td>
+                      <td>
+                        Veebilehtede loomine ja haldamine WordPressiga.<br />
+                        WordPressi teemade disainimine ja kohandamine.<br />
+                        WordPressi pistikprogrammi arendamine ja paigaldamine.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Panoram OÜ</td>
+                      <td>
+                        Mängustuudio veebilehe disainimine ja arendamine.<br />
+                        Andmebaaside loomine, haldamine ja integreerimine
+                        veebilehega.<br />
+                        Tööriista arendamine massiliste teadete saatmiseks
+                        registreeritud klientidele.<br />
+                        Eelregistreerimise veebilehe loomine kasutajate andmete
+                        kogumiseks.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <section class="section contact" aria-label="contact">
+      <div class="container">
+        <h2 id="form"class="h2 section-title">Võta minuga ühendust</h2>
+        <form
+          action="https://formspree.io/f/mgveojro"
+          method="POST"
+          class="contact-form"
+        >
+          <label for="name">Nimi</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Your Name"
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Your Email"
+          />
+
+          <label for="message">Teie sõnum</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Your Message"
+          ></textarea>
+
+          <button type="submit" class="btn has-after">
+            <span class="span">Saada kiri</span>
+            <ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </form>
+      </div>
+    </section>
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Võta minuga ühendust</p>
+          </li>
+
+          <li>
+            <a href="mailto:praktikaevul@gmail.com" class="footer-link"
+              >praktikaevul@gmail.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Asukoht</p>
+          </li>
+
+          <li>
+            <a  class="footer-link">Tartu</a>
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
